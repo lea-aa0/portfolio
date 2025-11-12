@@ -1,0 +1,162 @@
+a{
+    text-decoration: none;
+    color: rgb(89, 86, 86);
+}
+body{
+
+}
+
+ul{
+    list-style-type: none;
+}
+
+nav ul{
+    display: flex;
+    gap: 16px;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+nav{
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     padding: 16px 16px;
+}
+
+
+nav a:hover{
+    color: black;
+}
+
+ .button-container{
+    display: flex;
+    gap:16px
+ }
+
+ .button-primary{
+    display: flex;
+    border-radius: 0px;
+    background-color: black;
+    width: 150px;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    color: white;
+ }
+
+.button-primary:hover{
+    transform: scale(1.03);
+}
+
+ .presentation{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+ }
+
+  .presentation img{
+         width: 300px;
+         height: 250px;
+         object-fit: cover;
+  }
+
+header{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+.competences{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 100px;
+}
+.competence{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 1px;
+    width: 300px;
+    height: 100px;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.competence img{
+    width: 50px;
+    height: 50px;
+}
+
+#realisations{
+    display: flex;
+    margin-top: 150px;
+    flex-direction: column;
+}
+
+h2{
+    display: flex;
+    justify-content: center;
+}
+
+.projets1{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 100px;
+    margin-right: 245px;
+}
+
+.projets2{
+    display: flex;
+    justify-content: space-around;
+    margin-left: 245px;
+    margin-top: 15px;
+}
+#realisations img{
+    width: 250px;
+    height: 250px;
+    border-style: double;
+    border-width: 50%;
+}
+
+.images{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.images:hover{
+    transform: scale(1.03);
+}
+#temoignages{
+    display: flex;
+    margin-top: 15px;
+    justify-content: center;
+}
+
+.temoignage{
+    display: flex;
+    border-radius: 10px;
+    background-color: rgb(212, 208, 208);
+    width: 400px;
+    height: 250px;
+    justify-content: space-between;
+    color: black;
+    flex-direction: column;
+    align-items: center;
+}
+.temoignages{
+    display: flex;
+    justify-content: space-between;
+}
+
+.temoignage img{
+    width: 50px;
+    height: 40px;
+    object-fit: cover;
+    
+    
+}
