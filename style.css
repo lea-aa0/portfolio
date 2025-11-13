@@ -1,13 +1,26 @@
+body{
+    margin: 50px 50px 0px 50px;
+    font-family: "Poppins", sans-serif;
+}
+
 a{
     text-decoration: none;
     color: rgb(89, 86, 86);
 }
-body{
-
-}
 
 ul{
     list-style-type: none;
+}
+
+.logo img{
+    display: flex;
+    width: 50px;
+    height: 50px;
+    border-radius: 35%;
+}
+
+.logo:hover{
+    transform: scale(1.05);
 }
 
 nav ul{
@@ -15,13 +28,14 @@ nav ul{
     gap: 16px;
     justify-content: space-between;
     flex-direction: row;
+    flex-wrap: wrap;
 }
 
 nav{
      display: flex;
      align-items: center;
      justify-content: space-between;
-     padding: 16px 16px;
+     margin-left: 48px;
 }
 
 
@@ -36,7 +50,7 @@ nav a:hover{
 
  .button-primary{
     display: flex;
-    border-radius: 0px;
+    border-radius: 10px;
     background-color: black;
     width: 150px;
     height: 50px;
@@ -55,16 +69,20 @@ nav a:hover{
     align-items: center;
  }
 
-  .presentation img{
-         width: 300px;
+  .presentation video{
+         width: 470px;
          height: 250px;
          object-fit: cover;
+         border-radius: 10px;
+    
   }
 
 header{
     display: flex;
     justify-content: space-around;
     flex-direction: row;
+    flex-wrap: wrap;
+    gap: 50px;
 }
 
 .competences{
@@ -73,6 +91,7 @@ header{
     align-items: center;
     flex-direction: row;
     margin-top: 100px;
+    flex-wrap: wrap;
 }
 .competence{
     display: flex;
@@ -80,20 +99,26 @@ header{
     align-items: center;
     border-radius: 1px;
     width: 300px;
-    height: 100px;
     text-align: center;
     justify-content: space-between;
 }
 
-.competence img{
-    width: 50px;
-    height: 50px;
+.competence video{
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.competence:hover{
+    transform: scale(1.05);
 }
 
 #realisations{
     display: flex;
     margin-top: 150px;
     flex-direction: column;
+    flex-wrap: wrap;
 }
 
 h2{
@@ -106,6 +131,8 @@ h2{
     justify-content: space-around;
     margin-top: 100px;
     margin-right: 245px;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
 }
 
 .projets2{
@@ -113,12 +140,20 @@ h2{
     justify-content: space-around;
     margin-left: 245px;
     margin-top: 15px;
+    flex-wrap: wrap;
 }
 #realisations img{
     width: 250px;
     height: 250px;
     border-style: double;
     border-width: 50%;
+    border-radius: 10px;
+   flex-wrap: wrap;
+}
+
+#retours{
+    margin-bottom: 0px;
+    margin-top: 50px;
 }
 
 .images{
@@ -127,15 +162,12 @@ h2{
     align-items: center;
     justify-content: center;
     text-align: center;
+    
 }
 .images:hover{
     transform: scale(1.03);
 }
-#temoignages{
-    display: flex;
-    margin-top: 15px;
-    justify-content: center;
-}
+
 
 .temoignage{
     display: flex;
@@ -147,16 +179,102 @@ h2{
     color: black;
     flex-direction: column;
     align-items: center;
+    padding: 10px;
+    flex-wrap: wrap;
+    font-size: small;
 }
+
 .temoignages{
     display: flex;
     justify-content: space-between;
+    gap: 10px;
+    align-items: center;
+    position: relative;
 }
+
+
+.button {
+  position: absolute;
+  top: 50%;
+  align-items: center;
+  width: 1.5rem;
+  height: 1.5rem;
+  justify-content: center;
+  display: flex;
+}
+
+.button--previous {
+  left: 1.5rem;
+
+  transform: rotate(180deg);
+}
+
+.button--next {
+  right: 1.5rem;
+}
+
 
 .temoignage img{
     width: 50px;
     height: 40px;
     object-fit: cover;
-    
-    
 }
+
+.note{
+    display: flex;
+    align-items: center;
+}
+
+.list {
+  display: flex;
+  gap: 8px;
+  padding: 16px;
+
+  list-style: none;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+}
+
+.item {
+  flex-shrink: 0;
+  width: 450px;
+  height: 60vh;
+  background-color: #FFF;
+  scroll-snap-align: center;
+}
+
+.list::-webkit-scrollbar {
+  display: none;
+}
+
+ .button-container2{
+    display: flex;
+    gap:16px;
+    justify-content: center;
+    align-items: center;
+
+ }
+
+ .footer{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    justify-content: space-around;
+    
+ }
+ .foot{
+    display: flex;
+    flex-direction: column;
+ }
+
+ .icons{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+ }
+
+ footer p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
