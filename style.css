@@ -3,10 +3,6 @@ body{
     font-family: "Poppins", sans-serif;
 }
 
-body, html {
-    height:100vh;
-    width: 100vh;
-}
 
 a{
     text-decoration: none;
@@ -192,12 +188,10 @@ h2{
 }
 
 .temoignages{
-    display: flex;
-    justify-content: space-between;
     gap: 10px;
-    align-items: center;
     position: relative;
 }
+
  .temoignage:hover{
     transform: scale(1.05);
 }
@@ -261,7 +255,6 @@ h2{
     gap:16px;
     justify-content: center;
     align-items: center;
-
  }
 
  .footer{
@@ -269,7 +262,8 @@ h2{
     justify-content: center;
     flex-direction: row;
     justify-content: space-around;
-    
+    background-color: lightgrey;
+    padding: 13px;
  }
  .foot{
     display: flex;
