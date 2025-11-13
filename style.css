@@ -3,6 +3,10 @@ body{
     font-family: "Poppins", sans-serif;
 }
 
+body, html {
+    height:100vh;
+}
+
 a{
     text-decoration: none;
     color: rgb(89, 86, 86);
@@ -101,6 +105,7 @@ header{
     width: 300px;
     text-align: center;
     justify-content: space-between;
+    transition: transform 1s ease;
 }
 
 .competence video{
@@ -182,6 +187,7 @@ h2{
     padding: 10px;
     flex-wrap: wrap;
     font-size: small;
+    transition: transform 0.2s ease;
 }
 
 .temoignages{
@@ -191,7 +197,9 @@ h2{
     align-items: center;
     position: relative;
 }
-
+ .temoignage:hover{
+    transform: scale(1.05);
+}
 
 .button {
   position: absolute;
@@ -272,6 +280,7 @@ h2{
     flex-direction: row;
     gap: 10px;
  }
+
 
  footer p{
     display: flex;
